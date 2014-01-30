@@ -9,18 +9,18 @@
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>CFBundleIconFile</key>
-	<string>Dogecoin.icns</string>
+	<string>Polishcoin.icns</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>© Dogecoin</string>
+	<string>© Polishcoin</string>
 	<key>CFBundleSignature</key>
 	<string>DOGE</string>
 	<key>CFBundleExecutable</key>
-	<string>Dogecoin-Qt</string>
+	<string>Polishcoin-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.dogecoin.wallet-qt</string>
+	<string>com.polishcoin.wallet-qt</string>
 	<key>CFBundleName</key>
-	<string>Dogecoin-Qt</string>
+	<string>Polishcoin-Qt</string>
 </dict>
 </plist>
