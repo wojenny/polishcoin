@@ -2231,8 +2231,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="-28"/>
-        <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
-        <translation>Načúvať spojeniam na &lt;port&gt; (prednastavené: 22556 alebo testovacia sieť: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 4823 or testnet: 44823)</source>
+        <translation>Načúvať spojeniam na &lt;port&gt; (prednastavené: 4823 alebo testovacia sieť: 44823)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2266,8 +2266,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+27"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>Počúvať JSON-RPC spojeniam na &lt;port&gt; (predvolené: 22555 or testnet: 44555)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 4822 or testnet: 44822)</source>
+        <translation>Počúvať JSON-RPC spojeniam na &lt;port&gt; (predvolené: 4822 or testnet: 44822)</translation>
     </message>
     <message>
         <location line="+37"/>
