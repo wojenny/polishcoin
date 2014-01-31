@@ -273,7 +273,7 @@ class CBitcoinAddress : public CBase58Data
 public:
     enum
     {
-        PUBKEY_ADDRESS = 30, // PolishCoin addresses start with D
+        PUBKEY_ADDRESS = 22, // PolishCoin addresses start with P
         SCRIPT_ADDRESS = 22,
         PUBKEY_ADDRESS_TEST = 113,
         SCRIPT_ADDRESS_TEST = 196,
