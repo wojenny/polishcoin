@@ -2838,7 +2838,7 @@ bool InitBlockIndex() {
         //  vMerkleTree: 5b2a3f53f605d62c53e62932dac6925e3d74afa5a4b459745c36d42d0ed26a69 
 
         // Genesis block
-        const char* pszTimestamp = "Nintondo";
+        const char* pszTimestamp = "PolishCoin started";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2850,13 +2850,13 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1386325540;
+        block.nTime    = 1391164641;
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 99943;
 
         if (fTestNet)
         {
-            block.nTime    = 1386325540;
+            block.nTime    = 1391164641;
             block.nNonce   = 0;
         }
 
