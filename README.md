@@ -1,11 +1,10 @@
-# Polishcoin [DOGE, Ð] Integration/Staging Tree
-http://polishcoin.com/
+# Polishcoin [POL] Integration/Staging Tree
+http://polish.altcoin-pool.com/
 
-![PolishCoin](http://static.tumblr.com/ppdj5y9/Ae9mxmxtp/300coin.png)
 
 ## What is PolishCoin? - Such coin
-Polishcoin is like Bitcoin, but based on Litecoin, and also much more wow.
-http://polishcoin.com/
+Polishcoin is like Bitcoin, but based on Litecoin/Dogecoin, and also much more wow.
+http://polish.altcoin-pool.com
 
 ## License - Much license
 PolishCoin is released under the terms of the MIT license. See [COPYING](COPYING)
@@ -54,7 +53,5 @@ Special reward system: Random block rewards
     make -f makefile.unix USE_UPNP=1 USE_IPV6=1 USE_QRCODE=1
 
 ### Such ports
-RPC 22555
-P2P 22556
-
-![](http://dogesay.com/wow//////such/coin)
+RPC 4822
+P2P 4823
