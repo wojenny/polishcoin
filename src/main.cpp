@@ -34,7 +34,8 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691");
+uint256 hashGenesisBlock("0x2653a284b718ee28996c99b0f087ebfb2dcc91a5053b415e952cb5f90164775f");
+
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Polishcoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2850,9 +2851,9 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1391164641;
+        block.nTime    = 1391198188;//1391164641;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 99943;
+        block.nNonce   = 292664;
 
         if (fTestNet)
         {
@@ -2862,11 +2863,48 @@ bool InitBlockIndex() {
 
         //// debug print
         uint256 hash = block.GetHash();
-        printf("%s\n", hash.ToString().c_str());
-        printf("%s\n", hashGenesisBlock.ToString().c_str());
-        printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x5b2a3f53f605d62c53e62932dac6925e3d74afa5a4b459745c36d42d0ed26a69"));
+        printf( "%s\n", hash.ToString().c_str());
+        printf( "%s\n", hashGenesisBlock.ToString().c_str());
+        printf( "%s\n", block.hashMerkleRoot.ToString().c_str());
+
+	assert(block.hashMerkleRoot == uint256("0xaf1325e052c155fab0b61f63764a65ee4779cb39d92c294659ce93315cd084c3"));
+
+	// If genesis block hash does not match, then generate new genesis hash.
+if (false && block.GetHash() != hashGenesisBlock)
+{
+    printf("Searching for genesis block...\n");
+    // This will figure out a valid hash and Nonce if you're
+    // creating a different genesis block:
+    uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
+    uint256 thash;
+    char scratchpad[SCRYPT_SCRATCHPAD_SIZE];
+ 
+    loop
+    {
+        scrypt_1024_1_1_256_sp_generic(BEGIN(block.nVersion), BEGIN(thash), scratchpad);
+        if (thash <= hashTarget)
+            break;
+        if ((block.nNonce & 0xFFF) == 0)
+        {
+            printf("nonce %08X: hash = %s (target = %s)\n", block.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
+        }
+        ++block.nNonce;
+        if (block.nNonce == 0)
+        {
+            printf("NONCE WRAPPED, incrementing time\n");
+            ++block.nTime;
+        }
+    }
+    printf("block.nTime = %u \n", block.nTime);
+    printf("block.nNonce = %u \n", block.nNonce);
+    printf("block.GetHash = %s\n", block.GetHash().ToString().c_str());
+}
+ 
+ 
+ 
+
         block.print();
+
         assert(hash == hashGenesisBlock);
 
         // Start new block file

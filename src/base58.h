@@ -274,7 +274,7 @@ public:
     enum
     {
         PUBKEY_ADDRESS = 22, // PolishCoin addresses start with P
-        SCRIPT_ADDRESS = 22,
+        SCRIPT_ADDRESS = 23,
         PUBKEY_ADDRESS_TEST = 113,
         SCRIPT_ADDRESS_TEST = 196,
     };
