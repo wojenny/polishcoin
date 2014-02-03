@@ -199,10 +199,10 @@ void BitcoinGUI::createActions()
     overviewAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_1));
     tabGroup->addAction(overviewAction);
 
-    miningAction = new QAction(QIcon(":/icons/mining"), tr("&Mining"), this);
-    miningAction->setToolTip(tr("Configure mining"));
-    miningAction->setCheckable(true);
-    tabGroup->addAction(miningAction);
+    //miningAction = new QAction(QIcon(":/icons/mining"), tr("&Mining"), this);
+    //miningAction->setToolTip(tr("Configure mining"));
+    //miningAction->setCheckable(true);
+    //tabGroup->addAction(miningAction);
 
     historyAction = new QAction(QIcon(":/icons/history"), tr("&Transactions"), this);
     historyAction->setToolTip(tr("Browse transaction history"));
@@ -245,7 +245,7 @@ void BitcoinGUI::createActions()
 
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(gotoOverviewPage()));
-    connect(miningAction, SIGNAL(triggered()), this, SLOT(gotoMiningPage()));
+    //connect(miningAction, SIGNAL(triggered()), this, SLOT(gotoMiningPage()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(gotoHistoryPage()));
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
@@ -344,7 +344,7 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(receiveCoinsAction);
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
-    toolbar->addAction(miningAction);
+    //toolbar->addAction(miningAction);
 #ifdef FIRST_CLASS_MESSAGING
     toolbar->addAction(firstClassMessagingAction);
 #endif
@@ -735,7 +735,7 @@ void BitcoinGUI::gotoOverviewPage()
 
 void BitcoinGUI::gotoMiningPage()
 {
-    miningAction->setChecked(true);
+    //miningAction->setChecked(true);
     centralWidget->setCurrentWidget(miningPage);
 
     exportAction->setEnabled(false);
