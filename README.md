@@ -34,5 +34,8 @@ P2P 4823
 
 http://polish.altcoin-pool.com
 
+### Windows PolishCoin-QT Wallet
+
+http://www.polish-coin.org/polishcoin-qt.zip
 
 ![PolishCoin](http://www.polish-coin.org/media/logo_big_polishcoin_350.png)
