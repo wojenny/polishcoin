@@ -1,4 +1,5 @@
 ﻿# Polishcoin [POL] Integration/Staging Tree
+
 http://www.polish-coin.org/
 
 ![PolishCoin](http://www.polish-coin.org/media/logo_big_polishcoin_350.png)
@@ -27,6 +28,11 @@ Total of 100,000,000,000 coins
 RPC 4822
 
 P2P 4823
+
+
+### MPOS Mining Pool
+
+http://polish.altcoin-pool.com
 
 
 ![PolishCoin](http://www.polish-coin.org/media/logo_big_polishcoin_350.png)
