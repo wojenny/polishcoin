@@ -23,7 +23,10 @@ Total of 100,000,000,000 coins
 10 000 coins per block
 
 ### Ports
+
 RPC 4822
+
 P2P 4823
 
-(http://www.polish-coin.org/media/logo_big_polishcoin_350.png)
+
+![PolishCoin](http://www.polish-coin.org/media/logo_big_polishcoin_350.png)
