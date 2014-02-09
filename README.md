@@ -32,7 +32,7 @@ P2P 4823
 
 ### MPOS Mining Pool
 
-http://polish.altcoin-pool.com
+Will be opened 16th of Feb 2014
 
 ### Windows PolishCoin-QT Wallet
 
