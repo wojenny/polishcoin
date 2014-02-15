@@ -1,4 +1,4 @@
-﻿# Polishcoin [POL] Integration/Staging Tree
+﻿# PolishCoin [PCC] Integration/Staging Tree
 
 http://www.polish-coin.org/
 
