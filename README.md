@@ -38,6 +38,6 @@ Will be opened 14th of Feb 2014
 
 ### Windows PolishCoin-QT Wallet
 
-http://www.polish-coin.org/polishcoin-qt.zip
+http://www.polish-coin.org/win-polishcoin-qt.zip
 
 ![PolishCoin](http://www.polish-coin.org/media/logo_big_polishcoin_350.png)
