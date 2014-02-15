@@ -17,11 +17,13 @@ Developers work in their own trees, then submit pull requests when they think
 their feature or bug fix is ready.
 
 ### How much POL can exist?
-Total of 90,000,000 coins
+Total of 150,000,000 coins
 
 1 Minute Block Targets, 4 Hour Diff Readjustments
 
-500 coins per block
+Halving every 750 000 blocks
+
+100 coins per block
 
 ### Ports
 
